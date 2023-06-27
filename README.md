@@ -85,6 +85,63 @@ This project is licensed under the [GNU-General-Public-License-v3.0/LICENSE](LIC
 - [TensorFlow](https://www.tensorflow.org/) - Machine Learning Framework
 - [PyTorch](https://pytorch.org/) - Deep Learning Library
 
+# Object Detection using SSD Model
+
+This project aims to provide a high-level overview of the steps involved in training an object detection model using the Single Shot MultiBox Detector (SSD) approach. Please note that training an SSD model requires significant computational resources and large annotated datasets. 
+
+## Overview
+
+The process of training an SSD model involves the following steps:
+
+1. **Data collection and annotation**: Gather a dataset of relevant images (e.g., autonomous driving scenarios) and annotate objects of interest with bounding boxes and class labels.
+
+2. **Preprocessing**: Prepare the dataset by resizing the images, normalizing pixel values, and converting annotations to the required format.
+
+3. **Model architecture**: Define the SSD model architecture, typically involving a base network (e.g., VGG16 or ResNet) followed by additional layers for object detection at multiple scales.
+
+4. **Loss function**: Define the loss function that measures the discrepancy between predicted bounding boxes and ground truth annotations.
+
+5. **Training**: Train the SSD model using the prepared dataset and loss function. This step optimizes the model parameters to minimize the loss.
+
+6. **Evaluation**: Evaluate the trained model on a separate validation set to measure its performance and make necessary adjustments.
+
+7. **Inference**: Save the trained model in the desired format, such as TensorFlow's SavedModel or a frozen graph (.pb file), for later use in object detection applications.
+
+Please note that training an object detection model is a complex and resource-intensive task. It requires expertise in machine learning, access to powerful hardware (e.g., GPUs), and significant training time. If possible, it is recommended to explore pre-trained SSD models available in popular deep learning frameworks like TensorFlow or PyTorch and fine-tune them on your specific dataset.
+
+## Requirements
+
+To run the code, ensure you have the following dependencies installed:
+
+- TensorFlow
+- OpenCV
+- NumPy
+
+## Usage
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
+
+2. Download a pre-trained SSD model or train your own using the steps mentioned above.
+
+3. Update the `model_path` variable in the code with the path to your SSD model.
+
+4. Run the object detection script:
+   ```bash
+   python object_detection.py
+   ```
+
+   This script will use your camera to perform object detection in real-time.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+
+Feel free to modify and adapt the content to fit your project's needs.
 ## Contact
 
 For any questions or inquiries, please contact the project maintainer:aryucho@gmail.com
