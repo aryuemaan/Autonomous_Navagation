@@ -1,7 +1,6 @@
 # Autonomous Navigation Car
 
-
-This repository contains the code and resources for an autonomous navigation car. The car is designed to navigate and maneuver through an environment using various sensors and algorithms. It provides a platform for developing and testing autonomous navigation algorithms and systems.
+The car is designed to navigate and maneuver through an environment using various sensors and algorithms. It provides a platform for developing and testing autonomous navigation algorithms and systems.
 
 ## Features
 
